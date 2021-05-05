@@ -19,7 +19,6 @@ font-family: 'Orelega One', cursive;
 nav{
   flex:1;
   text-align: right;
-
 }
 
 nav ul{
@@ -43,7 +42,7 @@ p{
 }
 
 .Container{
-  max-width: 1300px;
+  max-width: 80%;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
@@ -260,10 +259,11 @@ small{
 
 .footer h2{
   color: #ff641c;
+  margin-bottom: 20px;
 }
 
 .footer-col-1, .footer-col-2, .footer-col-3{
-  min-width: 250px;
+  min-width: 266px;
   margin-bottom: 20px;
 }
 
@@ -279,6 +279,7 @@ small{
 
 .footer-col-2 img{
   width: 280px;
+  margin-bottom: 20px;
 
 }
 
@@ -295,11 +296,7 @@ ul{
   color: #000;
 }
 
-#Copyright{
-  text-align: center;
-  font-size: 15px;
-  color: #000;
-}
+
 
 .menu-icon{
   width: 28px;
