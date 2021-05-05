@@ -22,13 +22,13 @@
             <li><a href="productdetails.html">Produtos</a> </li>
           </ul>
         </nav>
-        <img src="imgs/cart.png" width="30" height="30" alt="cart image">
+        <a href="cart.html"><img src="imgs/cart.png" width="30" height="30" alt="cart image"></a>
         <img src="imgs/menu.png" class="menu-icon" onclick="menutoggle()">
       </div>
 
 <!-- NOTE: cart items details -->
 
-<div class="smallcontainer">
+<div class="smallcontainer carrinho">
   <table>
     <tr>
       <th>Produto</th>
@@ -36,11 +36,72 @@
       <th>subtotal</th>
     </tr>
     <tr>
-      <td>Nome do produto</td>
+      <td>
+        <div class="infocarrinho">
+          <img src="imgs/camisa1.jpeg" alt="">
+          <div>
+            <p>Camiseta Bonde Azul</p>
+            <small>Price: 39.90</small>
+            <br>
+            <a href="#">Remove</a>
+          </div>
+
+        </div>
+      </td>
+      <td><input type="number" name="" value="1"></td>
+      <td>R$ 39.90</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="infocarrinho">
+          <img src="imgs/camisa2.jpeg" alt="">
+          <div>
+            <p>Camiseta Bonde Azul</p>
+            <small>Price: 39.90</small>
+            <br>
+            <a href="#">Remove</a>
+          </div>
+
+        </div>
+      </td>
+      <td><input type="number" name="" value="1"></td>
+      <td>R$ 39.90</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="infocarrinho">
+          <img src="imgs/camisa3.jpeg" alt="">
+          <div>
+            <p>Camiseta Bonde Azul</p>
+            <small>Price: 39.90</small>
+            <br>
+            <a href="#">Remove</a>
+          </div>
+
+        </div>
+      </td>
       <td><input type="number" name="" value="1"></td>
       <td>R$ 39.90</td>
     </tr>
   </table>
+
+  <div class="precofinal">
+    <table>
+      <tr>
+        <td>Subtotal</td>
+        <td>R$ 200.00</td>
+      </tr>
+      <tr>
+        <td>Frete</td>
+        <td>R$ 200.00</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>R$ 200.00</td>
+      </tr>
+    </table>
+
+  </div>
 </div>
 <!-- NOTE: footer -->
 
