@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Orelega+One&family=Zen+Dots&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
     </head>
   <body>
 <div class="header">
@@ -20,15 +20,22 @@
           <ul id="menuitems">
             <li><a href="index.html">Pagina Inicial</a></li>
             <li><a href="productdetails.html">Produtos</a> </li>
+            <li>
+              <div class="cart-btn">
+                <span class="nav-icon">
+                  <a href="cart.html"><i class="fas fa-cart-plus"></i></a>
+                </span>
+                <div class="cart-items">0</div>
+              </div>
+            </li>
           </ul>
         </nav>
-        <a href="cart.html"><img src="imgs/cart.png" width="30" height="30" alt="cart image"></a>
         <img src="imgs/menu.png" class="menu-icon" onclick="menutoggle()">
       </div>
 
 <!-- NOTE: single product Details-->
 
-<div class="smallcontainer single-product">
+<article class="smallcontainer single-product">
   <div class="row">
     <div class="col-2">
       <img src="imgs/camisa1.jpeg" width="100%" alt="" id="camisafoco">
@@ -43,11 +50,12 @@
         <option>P</option>
       </select>
       <input type="number" name="" value="1">
-      <a href="#" class="btn" name="button">Adicionar ao carrinho</a>
+      <button class="btn" name="button" data-id="1">Adicionar ao carrinho</a>
     </div>
   </div>
 </div>
-<!-- NOTE: Featured Products -->
+
+<!-- NOTE: outros produtos -->
 
 <div class="smallcontainer">
   <h2 class="title">Outros modelos</h2>
@@ -83,23 +91,24 @@
 </div>
 
 
-<!-- NOTE: footer -->
 
+<!-- NOTE: footer -->
+<footer>
 <div class="footer">
   <div class="Container">
     <div class="row">
       <div class="footer-col-1">
-        <h2 id="delivery">Delivery</h2>
-        <p>Aceitamos encomendas para todo o Brasil</p>
+        <h2>Delivery</h2>
+        <p>Encomendas para todo o Brasil</p>
         <p style="font-size:35px">&#x1f69a;</p>
       </div>
       <div class="footer-col-2">
         <img src="imgs/logoftr.png" alt="Logo image">
+
       </div>
       <div class="footer-col-3">
         <h2>Follow us</h2>
         <ul>
-          <li></li>
           <li><a href="https://www.instagram.com/vadebonde/">Instagram</a></li>
           <li>Twitter</li>
         </ul>
@@ -108,6 +117,7 @@
   </div>
 </div>
 
+</footer>
 <!-- NOTE: javascript -->
 
 <script>
