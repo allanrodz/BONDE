@@ -25,48 +25,37 @@
         <img src="imgs/cart.png" width="30" height="30" alt="cart image">
         <img src="imgs/menu.png" class="menu-icon" onclick="menutoggle()">
       </div>
-      <div class="row">
-        <div class="col-2">
-          <h1> Sonhar, criar e inspirar é o nosso maior objetivo!</h1>
-          <p>A bonde é uma empresa de arte e moda que acredita em propósito.
-Acreditamos nas diferenças e na igualdade. O nosso maior conceito é a união
-de todos por uma só causa. Sem preconceitos, distinções ou indiferenças vestimos
-estilo e criamos arte para inspirar. Somos portavoz, por meio da nossa arte, das igualdades,
-liberdades e lutas sociais.
-</p>
-        </div>
-        <div class="col-2">
-        </div>
-      </div>
+
+<!-- NOTE: single product Details-->
+
+<div class="smallcontainer single-product">
+  <div class="row">
+    <div class="col-2">
+      <img src="imgs/camisa1.jpeg" width="100%" alt="" id="camisafoco">
     </div>
-  </div>
-
-<!-- NOTE: Featured categories -->
-
-<div class="categories">
-  <div class="smallcontainer">
-    <div class="row">
-      <div class="col-3">
-        <img src="imgs/cat1.jpeg" alt="foto1">
-      </div>
-      <div class="col-3">
-        <img src="imgs/cat2.jpeg" alt="">
-      </div>
-      <div class="col-3">
-        <img src="imgs/cat3.jpeg" alt="">
-      </div>
+    <div class="col-2">
+      <h1>Graffiti Bonde</h1>
+      <h4>R$ 39.90</h4>
+      <select>
+        <option>Escolha o Tamanho</option>
+        <option>G</option>
+        <option>M</option>
+        <option>P</option>
+      </select>
+      <input type="number" name="" value="1">
+      <a href="#" class="btn" name="button">Adicionar ao carrinho</a>
+      <h3>Detalhes da camisa</h3>
+      <p>Camiseta Bonde Azul</p>
     </div>
   </div>
 </div>
-
-
 <!-- NOTE: Featured Products -->
 
 <div class="smallcontainer">
-  <h2 class="title">Camisetas</h2>
+  <h2 class="title">Outros modelos</h2>
   <div class="row">
     <div class="col-4">
-      <img src="imgs/camisa1.jpeg" alt="produto exclusivo">
+      <img src="imgs/camisa1.jpeg" alt="produto exclusivo" class="modeloscamisas">
       <h4>Nome da camisa</h4>
       <div class="ratings">
 
@@ -74,7 +63,7 @@ liberdades e lutas sociais.
       <p>R$ 39,99</p>
     </div>
     <div class="col-4">
-      <img src="imgs/camisa2.jpeg" alt="produto exclusivo">
+      <img src="imgs/camisa2.jpeg" alt="produto exclusivo"  class="modeloscamisas">
       <h4>Blusa Magenta</h4>
       <div class="ratings">
 
@@ -82,7 +71,7 @@ liberdades e lutas sociais.
       <p>R$ 39,99</p>
     </div>
     <div class="col-4">
-      <img src="imgs/camisa3.jpeg" alt="produto exclusivo">
+      <img src="imgs/camisa3.jpeg" alt="produto exclusivo"  class="modeloscamisas">
       <h4>Blusa Magenta</h4>
       <div class="ratings">
 
@@ -90,7 +79,7 @@ liberdades e lutas sociais.
       <p>R$ 39,99</p>
     </div>
     <div class="col-4">
-      <img src="imgs/camisa4.jpeg" alt="produto exclusivo">
+      <img src="imgs/camisa4.jpeg" alt="produto exclusivo"  class="modeloscamisas">
       <h4>Blusa Magenta</h4>
       <div class="ratings">
 
@@ -98,7 +87,7 @@ liberdades e lutas sociais.
       <p>R$ 39,99</p>
     </div>
     <div class="col-4">
-      <img src="imgs/camisa5.jpeg" alt="produto exclusivo">
+      <img src="imgs/camisa5.jpeg" alt="produto exclusivo"  class="modeloscamisas">
       <h4>Blusa Magenta</h4>
       <div class="ratings">
 
@@ -150,5 +139,18 @@ liberdades e lutas sociais.
     }
   }
 </script>
+
+<!-- NOTE: javascript for product details -->
+
+<script>
+  var camisafoco = document.getElementById("camisafoco");
+  var modeloscamisas = document.getElementByClassName("modeloscamisas")
+
+  modeloscamisas[1].onclick = function()
+  {
+    camisafoco.src = modeloscamisas[1].src;
+  }
+</script>
+
   </body>
 </html>
