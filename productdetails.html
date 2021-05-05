@@ -44,8 +44,6 @@
       </select>
       <input type="number" name="" value="1">
       <a href="#" class="btn" name="button">Adicionar ao carrinho</a>
-      <h3>Detalhes da camisa</h3>
-      <p>Camiseta Bonde Azul</p>
     </div>
   </div>
 </div>
@@ -56,42 +54,29 @@
   <div class="row">
     <div class="col-4">
       <img src="imgs/camisa1.jpeg" alt="produto exclusivo" class="modeloscamisas">
-      <h4>Nome da camisa</h4>
-      <div class="ratings">
-
-      </div>
+      <h4 class="detalhecamisanovo">Camiseta Bonde Azul</h4>
       <p>R$ 39,99</p>
     </div>
     <div class="col-4">
       <img src="imgs/camisa2.jpeg" alt="produto exclusivo"  class="modeloscamisas">
-      <h4>Blusa Magenta</h4>
-      <div class="ratings">
+      <h4>Camiseta Bonde Cinza Claro</h4>
 
-      </div>
       <p>R$ 39,99</p>
     </div>
     <div class="col-4">
       <img src="imgs/camisa3.jpeg" alt="produto exclusivo"  class="modeloscamisas">
-      <h4>Blusa Magenta</h4>
-      <div class="ratings">
+      <h4>Camiseta Bonde Amarela</h4>
 
-      </div>
       <p>R$ 39,99</p>
     </div>
     <div class="col-4">
       <img src="imgs/camisa4.jpeg" alt="produto exclusivo"  class="modeloscamisas">
-      <h4>Blusa Magenta</h4>
-      <div class="ratings">
-
-      </div>
+      <h4>Camiseta Bonde Rosa</h4>
       <p>R$ 39,99</p>
     </div>
     <div class="col-4">
       <img src="imgs/camisa5.jpeg" alt="produto exclusivo"  class="modeloscamisas">
-      <h4>Blusa Magenta</h4>
-      <div class="ratings">
-
-      </div>
+      <h4>Camiseta Bonde Cinza Escuro</h4>
       <p>R$ 39,99</p>
     </div>
   </div>
@@ -144,11 +129,35 @@
 
 <script>
   var camisafoco = document.getElementById("camisafoco");
-  var modeloscamisas = document.getElementByClassName("modeloscamisas")
+  var modeloscamisas = document.getElementsByClassName('modeloscamisas')
 
+
+
+  modeloscamisas[0].onclick = function()
+  {
+    camisafoco.src = modeloscamisas[0].src;
+
+  }
   modeloscamisas[1].onclick = function()
   {
     camisafoco.src = modeloscamisas[1].src;
+
+  }
+  modeloscamisas[2].onclick = function()
+  {
+    camisafoco.src = modeloscamisas[2].src;
+  }
+  modeloscamisas[3].onclick = function()
+  {
+    camisafoco.src = modeloscamisas[3].src;
+  }
+  modeloscamisas[4].onclick = function()
+  {
+    camisafoco.src = modeloscamisas[4].src;
+  }
+  modeloscamisas[5].onclick = function()
+  {
+    camisafoco.src = modeloscamisas[5].src;
   }
 </script>
 

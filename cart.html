@@ -22,93 +22,26 @@
             <li><a href="productdetails.html">Produtos</a> </li>
           </ul>
         </nav>
-        <img src="imgs/cart.png" width="30" height="30" alt="cart image" id="carrinho">
+        <img src="imgs/cart.png" width="30" height="30" alt="cart image">
         <img src="imgs/menu.png" class="menu-icon" onclick="menutoggle()">
       </div>
-      <div class="row">
-        <div class="col-2">
-          <h1> Sonhar, criar e inspirar é o nosso maior objetivo!</h1>
-          <p>A bonde é uma empresa de arte e moda que acredita em propósito.
-Acreditamos nas diferenças e na igualdade. O nosso maior conceito é a união
-de todos por uma só causa. Sem preconceitos, distinções ou indiferenças vestimos
-estilo e criamos arte para inspirar. Somos portavoz, por meio da nossa arte, das igualdades,
-liberdades e lutas sociais.
-</p>
-        </div>
-        <div class="col-2">
-        </div>
-      </div>
-    </div>
-  </div>
 
-<!-- NOTE: Featured categories -->
-
-<div class="categories">
-  <div class="smallcontainer">
-    <div class="row">
-      <div class="col-3">
-        <img src="imgs/cat1.jpeg" alt="foto1">
-      </div>
-      <div class="col-3">
-        <img src="imgs/cat2.jpeg" alt="">
-      </div>
-      <div class="col-3">
-        <img src="imgs/cat3.jpeg" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- NOTE: Featured Products -->
+<!-- NOTE: cart items details -->
 
 <div class="smallcontainer">
-  <h2 class="title">Camisetas</h2>
-  <div class="row">
-    <div class="col-4">
-      <img src="imgs/camisa1.jpeg" alt="produto exclusivo">
-      <h4>Nome da camisa</h4>
-      <div class="ratings">
-
-      </div>
-      <p>R$ 39,99</p>
-    </div>
-    <div class="col-4">
-      <img src="imgs/camisa2.jpeg" alt="produto exclusivo">
-      <h4>Blusa Magenta</h4>
-      <div class="ratings">
-
-      </div>
-      <p>R$ 39,99</p>
-    </div>
-    <div class="col-4">
-      <img src="imgs/camisa3.jpeg" alt="produto exclusivo">
-      <h4>Blusa Magenta</h4>
-      <div class="ratings">
-
-      </div>
-      <p>R$ 39,99</p>
-    </div>
-    <div class="col-4">
-      <img src="imgs/camisa4.jpeg" alt="produto exclusivo">
-      <h4>Blusa Magenta</h4>
-      <div class="ratings">
-
-      </div>
-      <p>R$ 39,99</p>
-    </div>
-    <div class="col-4">
-      <img src="imgs/camisa5.jpeg" alt="produto exclusivo">
-      <h4>Blusa Magenta</h4>
-      <div class="ratings">
-
-      </div>
-      <p>R$ 39,99</p>
-    </div>
-  </div>
+  <table>
+    <tr>
+      <th>Produto</th>
+      <th>quantidade</th>
+      <th>subtotal</th>
+    </tr>
+    <tr>
+      <td>Nome do produto</td>
+      <td><input type="number" name="" value="1"></td>
+      <td>R$ 39.90</td>
+    </tr>
+  </table>
 </div>
-
-
 <!-- NOTE: footer -->
 
 <div class="footer">
@@ -149,12 +82,7 @@ liberdades e lutas sociais.
       menuitems.style.maxHeight = "0px"
     }
   }
-
-  var cart = document.getElementById('carrinho')
-  carrinho.onclick = function()
-  {
-    cart.html;
-  }
 </script>
+
   </body>
 </html>
