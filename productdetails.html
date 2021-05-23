@@ -10,86 +10,103 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
     </head>
   <body>
-<div class="header">
     <div class="Container">
       <div class="navbar">
         <div class="logo">
-          <img src="imgs/logo.png" width="300" alt="Logo Image">
+          <img src="imgs/logo.png" width="200" alt="Logo Image">
         </div>
         <nav>
           <ul id="menuitems">
             <li><a href="index.html">Pagina Inicial</a></li>
             <li><a href="productdetails.html">Produtos</a> </li>
-            <li>
-              <div class="cart-btn">
-                <span class="nav-icon">
-                  <a href="cart.html"><i class="fas fa-cart-plus"></i></a>
-                </span>
-                <div class="cart-items">0</div>
-              </div>
-            </li>
           </ul>
         </nav>
         <img src="imgs/menu.png" class="menu-icon" onclick="menutoggle()">
       </div>
-
-<!-- NOTE: single product Details-->
-
-<article class="smallcontainer single-product">
-  <div class="row">
-    <div class="col-2">
-      <img src="imgs/camisa1.jpeg" width="100%" alt="" id="camisafoco">
-    </div>
-    <div class="col-2">
-      <h1>Graffiti Bonde</h1>
-      <h4>R$ 39.90</h4>
-      <select>
-        <option>Escolha o Tamanho</option>
-        <option>G</option>
-        <option>M</option>
-        <option>P</option>
-      </select>
-      <input type="number" name="" value="1">
-      <button class="btn" name="button" data-id="1">Adicionar ao carrinho</a>
-    </div>
-  </div>
 </div>
 
-<!-- NOTE: outros produtos -->
+<!-- NOTE: Modelos -->
 
 <div class="smallcontainer">
-  <h2 class="title">Outros modelos</h2>
+  <h2 class="title">Modelos</h2>
   <div class="row">
     <div class="col-4">
       <img src="imgs/camisa1.jpeg" alt="produto exclusivo" class="modeloscamisas">
-      <h4 class="detalhecamisanovo">Camiseta Bonde Azul</h4>
-      <p>R$ 39,99</p>
+      <h4 class="detalhecamisanovo">Camiseta Bonde Azul - Graffiti Bonde</h4>
+      <p class="preco">R$ 39,99</p>
     </div>
     <div class="col-4">
-      <img src="imgs/camisa2.jpeg" alt="produto exclusivo"  class="modeloscamisas">
-      <h4>Camiseta Bonde Cinza Claro</h4>
-
-      <p>R$ 39,99</p>
+      <img src="imgs/camisa2.jpeg" alt="Camiseta Bonde Cinza Claro"  class="modeloscamisas">
+      <h4>Camiseta Bonde Cinza Claro - Arte Paz Graffiti</h4>
+      <p class="preco">R$ 39,99</p>
     </div>
     <div class="col-4">
-      <img src="imgs/camisa3.jpeg" alt="produto exclusivo"  class="modeloscamisas">
-      <h4>Camiseta Bonde Amarela</h4>
-
-      <p>R$ 39,99</p>
+      <img src="imgs/camisa3.jpeg" alt="Camiseta Bonde Amarela"  class="modeloscamisas">
+      <h4>Camiseta Bonde Amarela - Arte de Rua</h4>
+      <p class="preco">R$ 39,99</p>
     </div>
     <div class="col-4">
-      <img src="imgs/camisa4.jpeg" alt="produto exclusivo"  class="modeloscamisas">
-      <h4>Camiseta Bonde Rosa</h4>
-      <p>R$ 39,99</p>
+      <img src="imgs/camisa4.jpeg" alt="Camiseta Bonde Rosa"  class="modeloscamisas">
+      <h4>Camiseta Bonde Rosa - Arte de Rua</h4>
+      <p class="preco">R$ 39,99</p>
     </div>
     <div class="col-4">
-      <img src="imgs/camisa5.jpeg" alt="produto exclusivo"  class="modeloscamisas">
-      <h4>Camiseta Bonde Cinza Escuro</h4>
-      <p>R$ 39,99</p>
+      <img src="imgs/camisa5.jpeg" alt="Camiseta Bonde Cinza Escuro"  class="modeloscamisas">
+      <h4>Camiseta Bonde Cinza Escuro - Arte Bonde Graffiti</h4>
+      <p class="preco">R$ 39,99</p>
     </div>
   </div>
-</div>
 
+<div class="formulario">
+    <form action="https://api.staticforms.xyz/submit" method="post" class="card">
+      <input type="hidden" name="accessKey" value="410254f0-6f74-4548-96e9-51fece44a8f6">
+      <input type="hidden" name="redirectTo" value="file:///C:/Users/Roberto/Desktop/BONDE-main/BONDE-main/productdetails.html">
+      <h2>Solicitar link para pagamento - Dados para Entrega</h2>
+      <p>
+        Nome: <input type="text" name="name" id="name" required >
+        <br>
+        Endereco: <input type="text" name="$address" id="address" required >
+        <br>
+        CEP: <input type="text" name="$CEP" id="CEP" required >
+        <br>
+        Telefone: <input type="text" name="phone" id="phone" required >
+        <br>
+        Email: <input type="email" name="email" id="email" required >
+        <br>
+        <label for="Modelo">Modelo:</label>
+        <select name="$modelo">
+          <option value="Camiseta Bonde Cinza Escuro - Arte Bonde Graffiti">Camiseta Bonde Cinza Escuro - Arte Bonde Graffiti </option>
+          <option value="Camiseta Bonde Cinza Claro - Arte Paz Graffiti">Camiseta Bonde Cinza Claro - Arte Paz Graffiti </option>
+          <option value="Camiseta Bonde Vermelha - Graffiti Bonde">Camiseta Bonde Vermelha - Graffiti Bonde </option>
+          <option value="Camiseta Bonde Rosa - Arte de Rua">Camiseta Bonde Rosa - Arte de Rua </option>
+          <option value="Camiseta Bonde Azul - Graffiti Bonde">Camiseta Bonde Azul - Graffiti Bonde  </option>
+          <option value="Camiseta Bonde Amarela - Arte de Rua">Camiseta Bonde Amarela - Arte de Rua </option>
+        </select>
+        <br>
+        <label for="size">Tamanho:</label>
+        <select name="$size">
+          <option value="P">P</option>
+          <option value="M">M</option>
+          <option value="G">G</option>
+          <option value="GG">GG</option>
+        </select>
+        <label for="quantidade">Quantidade:</label>
+        <select name="$quantidade">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <br>
+        <p><i>Caso queira adquirir mais de tres camisas, por favor nos informe a quantidade no campo de observacoes abaixo.</i></p>
+      </p>
+      <label for="message">Obs.: </label>
+    <textarea name="message" id="message" cols="50" rows="6"></textarea>
+    <p>
+      <button type="submit" value="Submit" onclick="alerta()">Solicitar link para pagamento</button>
+    </p>
+  </form>
+  </div>
+</div>
 
 
 <!-- NOTE: footer -->
@@ -100,14 +117,14 @@
       <div class="footer-col-1">
         <h2>Delivery</h2>
         <p>Encomendas para todo o Brasil</p>
-        <p style="font-size:35px">&#x1f69a;</p>
+        <p style="font-size:25px">&#x1f69a;</p>
       </div>
       <div class="footer-col-2">
         <img src="imgs/logoftr.png" alt="Logo image">
 
       </div>
       <div class="footer-col-3">
-        <h2>Follow us</h2>
+        <h2>Nossas Redes Sociais</h2>
         <ul>
           <li><a href="https://www.instagram.com/vadebonde/">Instagram</a></li>
           <li>Twitter</li>
@@ -116,8 +133,8 @@
     </div>
   </div>
 </div>
-
 </footer>
+
 <!-- NOTE: javascript -->
 
 <script>
@@ -134,41 +151,10 @@
   }
 </script>
 
-<!-- NOTE: javascript for product details -->
-
 <script>
-  var camisafoco = document.getElementById("camisafoco");
-  var modeloscamisas = document.getElementsByClassName('modeloscamisas')
-
-
-
-  modeloscamisas[0].onclick = function()
-  {
-    camisafoco.src = modeloscamisas[0].src;
-
-  }
-  modeloscamisas[1].onclick = function()
-  {
-    camisafoco.src = modeloscamisas[1].src;
-
-  }
-  modeloscamisas[2].onclick = function()
-  {
-    camisafoco.src = modeloscamisas[2].src;
-  }
-  modeloscamisas[3].onclick = function()
-  {
-    camisafoco.src = modeloscamisas[3].src;
-  }
-  modeloscamisas[4].onclick = function()
-  {
-    camisafoco.src = modeloscamisas[4].src;
-  }
-  modeloscamisas[5].onclick = function()
-  {
-    camisafoco.src = modeloscamisas[5].src;
-  }
+function alerta(){
+alert("Muito obrigado! Estamos processando seu pedido e em breve voce recebera um Email/Whatsapp com o link para efetuar o pagamento");
+}
 </script>
-
   </body>
 </html>
