@@ -35,12 +35,10 @@ a{
 p{
   color: #555;
 }
+
 .nav-icon {
   font-size: 1.5rem;
 }
-
-
-
 
 .Container{
   max-width: 80%;
@@ -298,7 +296,7 @@ height: 50px;
 }
 
 .formulario button{
-  background-color: #000;
+  background-color: #ff523b;
   color: #fff;
 }
 
