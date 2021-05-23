@@ -92,7 +92,7 @@ p{
   margin-top: 70px;
 }
 
-/* NOTE: Featured categories */
+/* NOTE: Modelos */
 
 .categories{
   margin: 70px 0;
@@ -166,22 +166,6 @@ h4{
   transform: translateY(-5px);
 }
 
-/* NOTE: Ofertas */
-
-.ofertas{
-  background: radial-gradient(#fff,#cf9a08);
-  margin-top: 80px;
-  padding: 30px 0;
-}
-
-.col-2 .ofertas-img{
-  padding: 50px;
-}
-
-small{
-  color: #555;
-}
-
 
 
 /* NOTE: footer */
@@ -198,7 +182,7 @@ small{
 }
 
 .footer h2{
-  color: #ff641c;
+  color: #000;
   margin-bottom: 20px;
 }
 
@@ -224,20 +208,17 @@ small{
 }
 
 .footer-col-3{
-  flex-basis: 12%;
+
   text-align: center;
 }
 
-.footer-col-3 h2{
-  text-align: center;
+.footer-col-3 img{
+
 }
 
-.footer-col-3 ul{
-  text-align: center;
-}
 
 ul{
-  list-style-type: none;
+  list-style-type:  none;
 }
 
 

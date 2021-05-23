@@ -8,58 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Orelega+One&family=Zen+Dots&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     </head>
   <body>
-<div class="header">
     <div class="Container">
       <div class="navbar">
         <div class="logo">
-          <img src="imgs/logo.png" width="400" alt="Logo Image">
+          <img src="imgs/logo.png" width="200" alt="Logo Image">
         </div>
         <nav>
           <ul id="menuitems">
             <li><a href="index.html">Pagina Inicial</a></li>
-          <!-- NOTE: <li><a href="productdetails.html">Produtos</a> </li> -->
+            <li><a href="productdetails.html">Produtos</a> </li>
           </ul>
         </nav>
-        <img src="imgs/menu.png" class="menu-icon">
+        <img src="imgs/menu.png" class="menu-icon" onclick="menutoggle()">
       </div>
-      <div class="row">
-        <div class="col-2">
-          <h1> Sonhar, criar e inspirar é o nosso maior objetivo!</h1>
-          <p>A bonde é uma empresa de arte e moda que acredita em propósito.
-          Acreditamos nas diferenças e na igualdade. O nosso maior conceito é a união
-          de todos por uma só causa. Sem preconceitos, distinções ou indiferenças vestimos
-          estilo e criamos arte para inspirar. Somos portavoz, por meio da nossa arte, das igualdades,
-          liberdades e lutas sociais.
-          </p>
-        </div>
-        <div class="col-2">
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!-- NOTE: galeria imagens -->
-
-<div class="categories">
-  <div class="smallcontainer">
-    <div class="row">
-      <div class="col-3">
-        <img src="imgs/cat1.jpeg" alt="" >
-      </div>
-      <div class="col-3">
-        <img src="imgs/cat2.jpeg" alt="" id="slide">
-      </div>
-      <div class="col-3">
-        <img src="imgs/cat3.jpeg" alt="" >
-      </div>
-    </div>
-  </div>
 </div>
-
 
 <!-- NOTE: Modelos -->
 
@@ -87,7 +51,7 @@
       <p class="preco">R$ 39,99</p>
     </div>
     <div class="col-4">
-      <img src="imgs/camisa5.jpeg" alt="Camiseta Bonde Cinza Escuro"  class="modeloscamisas" id="slide1">
+      <img src="imgs/camisa5.jpeg" alt="Camiseta Bonde Cinza Escuro"  class="modeloscamisas">
       <h4>Camiseta Bonde Cinza Escuro - Arte Bonde Graffiti</h4>
       <p class="preco">R$ 39,99</p>
     </div>
@@ -154,21 +118,23 @@
       <div class="footer-col-1">
         <h2>Delivery</h2>
         <p>Encomendas para todo o Brasil - Aceitamos as principais formas de pagamento</p>
-        <img src="imgs/delivery.gif" width="100" alt="delivery gif">
+        <p style="font-size:25px">&#x1f69a;</p>
       </div>
       <div class="footer-col-2">
         <img src="imgs/logoftr.png" alt="Logo image">
+
       </div>
       <div class="footer-col-3">
-          <p><img src="imgs/ms.gif" width="150" alt=""> </p>
-          <p><a href="https://www.instagram.com/vadebonde/">Instagram</a></p>
-          <p>Twitter</p>
+        <h2>Nossas Redes Sociais</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/vadebonde/">Instagram</a></li>
+          <li>Twitter</li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
 </footer>
-
 <!-- NOTE: javascript -->
 
 <script>
@@ -185,10 +151,10 @@
   }
 </script>
 
-<script src="slider.js">
-
-
-
+<script>
+function alerta(){
+alert("Muito obrigado! Estamos processando seu pedido e em breve voce recebera um Email/Whatsapp com o link para efetuar o pagamento");
+}
 </script>
   </body>
 </html>
